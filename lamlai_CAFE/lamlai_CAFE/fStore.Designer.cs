@@ -354,10 +354,10 @@
         private System.Windows.Forms.CheckBox cbViewFull;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpkTo;
+        public System.Windows.Forms.DateTimePicker dtpkTo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dtpkFrom;
+        public System.Windows.Forms.DateTimePicker dtpkFrom;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dtgvStore;
         private System.Windows.Forms.Panel panel3;

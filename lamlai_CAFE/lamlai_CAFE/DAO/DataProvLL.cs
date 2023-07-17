@@ -22,7 +22,7 @@ namespace lamlai_CAFE.DAO
 
         private DataProvLL() { }
 
-        public DataTable ExecuteQuery(string query, string[] parameter = null)
+        public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
 
             //đổ dữ liệu
@@ -53,10 +53,7 @@ namespace lamlai_CAFE.DAO
                     }
                 }
 
-
-
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
-
                 adapter.Fill(data);
                 connection.Close();
             }

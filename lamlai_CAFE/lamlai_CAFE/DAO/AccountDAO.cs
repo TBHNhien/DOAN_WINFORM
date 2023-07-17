@@ -21,9 +21,9 @@ namespace lamlai_CAFE.DAO
 
         public bool Login(string userName , string passWord)
         {
-            string query = "SELECT * FROM ACCOUNT WHERE USERNAME = N'" + userName + "' AND PASSWORDACCOUNT = N'" + passWord + "' ";
+            string query = "USP_Login @UserName ,  @PassWord ";
 
-            DataTable result = DataProvLL.Instance.ExecuteQuery(query);
+            DataTable result = DataProvLL.Instance.ExecuteQuery(query, new object[] { userName , passWord });
 
 
 

@@ -15,6 +15,14 @@ namespace lamlai_CAFE
 {
     public partial class fStore : Form
     {
+        public static DateTime ngayF1;
+        public static DateTime ngayT1;
+
+
+
+        public DateTime NgayF1 { get => ngayF1; set => ngayF1 = value; }
+        public DateTime NgayT1 { get => ngayT1; set => ngayT1 = value; }
+
         public fStore()
         {
             InitializeComponent();
@@ -74,6 +82,7 @@ namespace lamlai_CAFE
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.Add(new SqlParameter("@FROMDAY", dtpkFrom.Value));
                     command.Parameters.Add(new SqlParameter("@TODAY", dtpkTo.Value));
+
 
                     dbContext.Database.Connection.Open();
                     using (var reader = command.ExecuteReader())
@@ -225,10 +234,12 @@ namespace lamlai_CAFE
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.NgayF1 = dtpkFrom.Value;
+            this.NgayT1 = dtpkTo.Value;
             fReportStore fR = new fReportStore();
-            this.Hide();
+            //this.Hide();
             fR.ShowDialog();
-            this.Show();
+            //this.Show();
 
         }
     }

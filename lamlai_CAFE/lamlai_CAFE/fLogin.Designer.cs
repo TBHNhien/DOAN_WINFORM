@@ -86,6 +86,7 @@
             // 
             // txbPassWord
             // 
+            this.txbPassWord.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.txbPassWord.Location = new System.Drawing.Point(234, 21);
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(448, 23);
