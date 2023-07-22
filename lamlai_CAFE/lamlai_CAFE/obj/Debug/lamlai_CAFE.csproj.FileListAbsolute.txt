@@ -60,7 +60,6 @@ C:\Users\Admin\Desktop\LAMLAI_C#\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.e
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\lamlai_CAFE.exe.config
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\lamlai_CAFE.exe
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\lamlai_CAFE.pdb
-C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\DevExpress.Pdf.v21.2.Core.dll
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.csproj.AssemblyReference.cache
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fAccountProfile.resources
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fAdmin.resources

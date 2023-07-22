@@ -48,6 +48,8 @@
             this.tpTable = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.cmbSLBan = new System.Windows.Forms.ComboBox();
+            this.btnQLBan = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.cbTableStatus = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -347,6 +349,8 @@
             // 
             // panel15
             // 
+            this.panel15.Controls.Add(this.cmbSLBan);
+            this.panel15.Controls.Add(this.btnQLBan);
             this.panel15.Controls.Add(this.panel24);
             this.panel15.Controls.Add(this.panel18);
             this.panel15.Controls.Add(this.panel21);
@@ -354,6 +358,24 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(600, 434);
             this.panel15.TabIndex = 15;
+            // 
+            // cmbSLBan
+            // 
+            this.cmbSLBan.FormattingEnabled = true;
+            this.cmbSLBan.Location = new System.Drawing.Point(211, 232);
+            this.cmbSLBan.Name = "cmbSLBan";
+            this.cmbSLBan.Size = new System.Drawing.Size(121, 24);
+            this.cmbSLBan.TabIndex = 13;
+            // 
+            // btnQLBan
+            // 
+            this.btnQLBan.Location = new System.Drawing.Point(12, 232);
+            this.btnQLBan.Name = "btnQLBan";
+            this.btnQLBan.Size = new System.Drawing.Size(133, 56);
+            this.btnQLBan.TabIndex = 12;
+            this.btnQLBan.Text = "Quản Lý Tổng số lượng BÀN";
+            this.btnQLBan.UseVisualStyleBackColor = true;
+            this.btnQLBan.Click += new System.EventHandler(this.btnQLBan_Click);
             // 
             // panel24
             // 
@@ -1111,5 +1133,7 @@
         private System.Windows.Forms.DataGridView dtgvBill;
         private System.Windows.Forms.TabControl tbAdmin;
         private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnQLBan;
+        private System.Windows.Forms.ComboBox cmbSLBan;
     }
 }

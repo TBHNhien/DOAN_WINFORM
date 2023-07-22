@@ -15,6 +15,12 @@ namespace lamlai_CAFE.Model
             BILLs = new HashSet<BILL>();
         }
 
+        public TABLEFOOD(string NAME, string STATUSTABLE)
+        {
+            this.NAME = NAME;
+            this.STATUSTABLE = STATUSTABLE;
+        }
+
         [Key]
         public int IDTABLEFOOD { get; set; }
 

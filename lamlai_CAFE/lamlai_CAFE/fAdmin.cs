@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using lamlai_CAFE.DAO;
+using lamlai_CAFE.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace lamlai_CAFE
 {
@@ -19,6 +21,7 @@ namespace lamlai_CAFE
         {
             InitializeComponent();
             //LoadAccountList();
+            
         }
 
         void LoadAccountList ()
@@ -167,6 +170,40 @@ namespace lamlai_CAFE
         private void dtgvAccount_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnQLBan_Click(object sender, EventArgs e)
+        {
+            using (var dbContext = new Model1())
+            {
+                using (var command = dbContext.Database.Connection.CreateCommand())
+                {
+                    command.CommandText = "USP_MANAGETABLLE";
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Add(new SqlParameter("@SL",int.Parse(cmbSLBan.Text)));
+
+                    dbContext.Database.Connection.Open();
+                    
+                    using (var reader = command.ExecuteReader()) 
+                    {
+                        var TABLEs = new List<TABLEFOOD>();
+                        
+                        while (reader.Read())
+                        {
+                            var table = new TABLEFOOD
+                            (
+                                    //IDTABLEFOOD = reader["IDTABLEFOOD"].ToString(),
+                                     reader["NAME"].ToString(),
+                                     "TRONG"
+                            );
+
+                            TABLEs.Add(table);
+                        }    
+                    }
+
+                }
+            }
+            MessageBox.Show("ĐÃ THAY ĐỔI THÀNH CÔNG !!!");
         }
     }
 }
