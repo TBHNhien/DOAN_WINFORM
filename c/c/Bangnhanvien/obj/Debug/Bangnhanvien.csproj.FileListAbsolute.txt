@@ -1,0 +1,11 @@
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.csproj.AssemblyReference.cache
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.csproj.SuggestedBindingRedirects.cache
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.Form1.resources
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.Properties.Resources.resources
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.csproj.GenerateResource.cache
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.csproj.CoreCompileInputs.cache
+D:\ĐÒ ÁN\Bangnhanvien\bin\Debug\Bangnhanvien.exe.config
+D:\ĐÒ ÁN\Bangnhanvien\bin\Debug\Bangnhanvien.exe
+D:\ĐÒ ÁN\Bangnhanvien\bin\Debug\Bangnhanvien.pdb
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.exe
+D:\ĐÒ ÁN\Bangnhanvien\obj\Debug\Bangnhanvien.pdb

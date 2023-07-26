@@ -1,0 +1,11 @@
+D:\ĐÒ ÁN\Luong(nhan vien)\bin\Debug\Luong(nhan vien).exe.config
+D:\ĐÒ ÁN\Luong(nhan vien)\bin\Debug\Luong(nhan vien).exe
+D:\ĐÒ ÁN\Luong(nhan vien)\bin\Debug\Luong(nhan vien).pdb
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong(nhan vien).csproj.AssemblyReference.cache
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong(nhan vien).csproj.SuggestedBindingRedirects.cache
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong_nhan_vien_.Form1.resources
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong_nhan_vien_.Properties.Resources.resources
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong(nhan vien).csproj.GenerateResource.cache
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong(nhan vien).csproj.CoreCompileInputs.cache
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong(nhan vien).exe
+D:\ĐÒ ÁN\Luong(nhan vien)\obj\Debug\Luong(nhan vien).pdb

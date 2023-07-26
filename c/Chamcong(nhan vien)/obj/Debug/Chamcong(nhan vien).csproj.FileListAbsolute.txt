@@ -1,0 +1,11 @@
+D:\ĐÒ ÁN\Chamcong(nhan vien)\bin\Debug\Chamcong(nhan vien).exe.config
+D:\ĐÒ ÁN\Chamcong(nhan vien)\bin\Debug\Chamcong(nhan vien).exe
+D:\ĐÒ ÁN\Chamcong(nhan vien)\bin\Debug\Chamcong(nhan vien).pdb
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong(nhan vien).csproj.AssemblyReference.cache
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong(nhan vien).csproj.SuggestedBindingRedirects.cache
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong_nhan_vien_.Form1.resources
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong_nhan_vien_.Properties.Resources.resources
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong(nhan vien).csproj.GenerateResource.cache
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong(nhan vien).csproj.CoreCompileInputs.cache
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong(nhan vien).exe
+D:\ĐÒ ÁN\Chamcong(nhan vien)\obj\Debug\Chamcong(nhan vien).pdb

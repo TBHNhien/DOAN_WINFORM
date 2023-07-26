@@ -35,6 +35,13 @@ namespace lamlai_CAFE
                 Button btn = new Button() { Width=TableDAO.TableWidth , Height = TableDAO.TableHeight };
                 btn.Text = item.Name + Environment.NewLine + item.Status;
 
+                //Set event Click cho nút btn
+                btn.Click += btn_Click;
+
+                //LẤY tableID khi nhấn vào nút (1)
+                btn.Tag = item; // kiểu là obj 
+
+
                 switch (item.Status)
                 {
                     case "Trống":
@@ -49,8 +56,30 @@ namespace lamlai_CAFE
             }
         }
 
+        void ShowBill(int id)
+        {
+
+            lsvBill.Items.Clear();
+            List<BillInfo> listBillInfo = BillInfoDAO.Instance.GetListBillInfo(BillDAO.Instance.GetUncheckBillIDByTableID(id));
+
+            foreach(BillInfo item in listBillInfo)
+            {
+                ListViewItem lsvI = new ListViewItem(item.IDFood.ToString());
+                lsvI.SubItems.Add(item.CountFood.ToString());
+
+                lsvBill.Items.Add(lsvI);
+            }
+        }
+
 
         #endregion
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            int tableID = ((sender as Button).Tag as Table).ID;//(1)
+
+            ShowBill(tableID);
+        }
 
         private void báoCáoToolStripMenuItem_Click(object sender, EventArgs e)
         {

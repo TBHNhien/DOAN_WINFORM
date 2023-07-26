@@ -1,0 +1,11 @@
+D:\ĐÒ ÁN\Luong(admin)\bin\Debug\Luong(admin).exe.config
+D:\ĐÒ ÁN\Luong(admin)\bin\Debug\Luong(admin).exe
+D:\ĐÒ ÁN\Luong(admin)\bin\Debug\Luong(admin).pdb
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong(admin).csproj.AssemblyReference.cache
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong(admin).csproj.SuggestedBindingRedirects.cache
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong_admin_.Form1.resources
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong_admin_.Properties.Resources.resources
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong(admin).csproj.GenerateResource.cache
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong(admin).csproj.CoreCompileInputs.cache
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong(admin).exe
+D:\ĐÒ ÁN\Luong(admin)\obj\Debug\Luong(admin).pdb

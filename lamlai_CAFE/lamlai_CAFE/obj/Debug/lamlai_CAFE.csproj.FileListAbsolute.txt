@@ -130,3 +130,7 @@ C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\ru\Microsoft.Repor
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fReportStore.resources
+C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\Bangnhanvien.fBangNV.resources
+C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\Chamcong_nhan_vien_.fChamCong.resources
+C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fLuong.resources
+C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fViewLuongNV.resources
