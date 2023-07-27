@@ -132,5 +132,5 @@ C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\bin\Debug\zh-CHT\Microsoft.R
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fReportStore.resources
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\Bangnhanvien.fBangNV.resources
 C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\Chamcong_nhan_vien_.fChamCong.resources
-C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fLuong.resources
-C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.fViewLuongNV.resources
+C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\Luong_admin_.fLuong.resources
+C:\Users\Admin\Desktop\DOAN\lamlai_CAFE\lamlai_CAFE\obj\Debug\Luong_nhan_vien_.fViewLuongNV.resources
