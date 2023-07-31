@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="luongnhanvienDataSet" targetNamespace="http://tempuri.org/luongnhanvienDataSet.xsd" xmlns:mstns="http://tempuri.org/luongnhanvienDataSet.xsd" xmlns="http://tempuri.org/luongnhanvienDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="luongnhanvienConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="luongnhanvienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.lamlai_CAFE.Properties.Settings.GlobalReference.Default.luongnhanvienConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="nhanvienTableAdapter" GeneratorDataComponentClassName="nhanvienTableAdapter" Name="nhanvien" UserDataComponentName="nhanvienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="luongnhanvienConnectionString (Settings)" DbObjectName="luongnhanvien.dbo.nhanvien" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CHUCVU FROM dbo.nhanvien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CHUCVU" DataSetColumn="CHUCVU" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="luongnhanvienDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="luongnhanvienDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="luongnhanvienDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="nhanvien" msprop:Generator_RowClassName="nhanvienRow" msprop:Generator_RowEvHandlerName="nhanvienRowChangeEventHandler" msprop:Generator_RowDeletedName="nhanvienRowDeleted" msprop:Generator_RowDeletingName="nhanvienRowDeleting" msprop:Generator_RowEvArgName="nhanvienRowChangeEvent" msprop:Generator_TablePropName="nhanvien" msprop:Generator_RowChangedName="nhanvienRowChanged" msprop:Generator_UserTableName="nhanvien" msprop:Generator_RowChangingName="nhanvienRowChanging" msprop:Generator_TableClassName="nhanvienDataTable" msprop:Generator_TableVarName="tablenhanvien">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHUCVU" msprop:Generator_UserColumnName="CHUCVU" msprop:Generator_ColumnPropNameInTable="CHUCVUColumn" msprop:Generator_ColumnPropNameInRow="CHUCVU" msprop:Generator_ColumnVarNameInTable="columnCHUCVU">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

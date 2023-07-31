@@ -81,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao.Designer.cs">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\BillInfoDAO.cs" />
@@ -150,16 +156,21 @@
     <Compile Include="fViewLuongNV.Designer.cs">
       <DependentUpon>fViewLuongNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="luongnhanvienDataSet.Designer.cs" />
     <Compile Include="Model\ACCOUNT.cs" />
     <Compile Include="Model\BILL.cs" />
     <Compile Include="Model\BILLINFO.cs" />
+    <Compile Include="Model\ChucVu.cs" />
+    <Compile Include="Model\classLoiNhuan.cs" />
     <Compile Include="Model\FOOD.cs" />
     <Compile Include="Model\FOODCATEGORY.cs" />
     <Compile Include="Model\Model1.cs" />
+    <Compile Include="Model\Model2.cs" />
     <Compile Include="Model\salary.cs" />
     <Compile Include="Model\STORE.cs" />
     <Compile Include="Model\StoreContextDB.cs" />
     <Compile Include="Model\TABLEFOOD.cs" />
+    <Compile Include="Model\TaiKhoan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLBHDataSet.Designer.cs">
@@ -174,6 +185,17 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StoreReport.cs" />
+    <Compile Include="TaiLKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiLKhoan.Designer.cs">
+      <DependentUpon>TaiLKhoan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao.resx">
+      <DependentUpon>BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baoCaoLoiNhuan.rdlc" />
+    <EmbeddedResource Include="BaoCaoLuong.rdlc" />
     <EmbeddedResource Include="fAccountProfile.resx">
       <DependentUpon>fAccountProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,7 +237,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="StoreReport.rdlc" />
+    <EmbeddedResource Include="TaiLKhoan.resx">
+      <DependentUpon>TaiLKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="luongnhanvienDataSet.xsc">
+      <DependentUpon>luongnhanvienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="luongnhanvienDataSet.xsd" />
+    <None Include="luongnhanvienDataSet.xss">
+      <DependentUpon>luongnhanvienDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\QLBHDataSet.GetStoreByDateDataTable.datasource" />
     <None Include="Properties\Settings.settings">

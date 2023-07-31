@@ -1,4 +1,5 @@
-﻿using DevExpress.LookAndFeel;
+﻿using BaiLon;
+using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 using System;
@@ -18,7 +19,7 @@ namespace lamlai_CAFE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fLogin());
+            Application.Run(new BaoCao());
         }
     }
 }
