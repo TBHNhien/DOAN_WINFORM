@@ -107,7 +107,7 @@ namespace lamlai_CAFE.DAO
         }
 
 
-        public object ExecuteScalarQuery(string query, object[] parameter = null)
+        public object ExecuteScalar(string query, object[] parameter = null)
        
         {
             object data = 0;

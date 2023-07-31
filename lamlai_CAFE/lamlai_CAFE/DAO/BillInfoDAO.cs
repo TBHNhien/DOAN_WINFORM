@@ -34,5 +34,12 @@ namespace lamlai_CAFE.DAO
 
             return listBillInfo;
         }
+
+        public void InsertBillInfo(string name, int idBill, int idFood, int count)
+        {
+            DataProvider.Instance.ExecuteNonQuery("USP_InsertBillInfo @TEN , @idBill , @idFood , @count ", new object[] { name, idBill, idFood, count });
+        }
+
+
     }
 }

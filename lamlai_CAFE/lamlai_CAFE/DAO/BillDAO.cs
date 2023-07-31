@@ -40,5 +40,23 @@ namespace lamlai_CAFE.DAO
             return -1;
 
         }
+        public void InsertBill(int id)
+        {
+            DataProvider.Instance.ExecuteQuery("EXEC USP_INSERTBILL @IDTABLEFOOD", new object[] { id });
+        }
+
+        public int GetMaxIDBill()
+        {
+            try
+            {
+                return (int)DataProvider.Instance.ExecuteScalar("select max(idbill) from bill");
+            }
+            catch
+            {
+                return 1;
+            }
+
+
+        }
     }
 }

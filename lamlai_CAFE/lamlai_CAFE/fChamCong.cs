@@ -15,7 +15,7 @@ namespace Chamcong_nhan_vien_
     {
         SqlConnection Connect;
         SqlCommand com;
-        string s = @"Data Source=BRUHHH\SQLEXPRESS;Initial Catalog=luongnhanvien;Integrated Security=True";
+        string s = "Data Source=.\\SQLEXPRESS;Initial Catalog=luongnhanvien;Integrated Security=True";
         SqlDataAdapter sqldata = new SqlDataAdapter();
         DataTable dttb = new DataTable();
         public fChamCong()

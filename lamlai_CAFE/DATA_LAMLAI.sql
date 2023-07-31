@@ -229,24 +229,6 @@ SELECT * FROM BILLINFO WHERE IDBILL=1
 
 SELECT * FROM BILL WHERE IDTABLEFOOD =47  AND STATUS = 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 USE [master]
 GO
 /****** Object:  Database [luongnhanvien]    Script Date: 26/07/2023 9:28:35 SA ******/
@@ -400,11 +382,6 @@ USE [master]
 GO
 ALTER DATABASE [luongnhanvien] SET  READ_WRITE 
 GO
-
-
-
-
-
 
 /****** Object:  Table [dbo].[ChucVu]    Script Date: 7/28/2023 10:51:22 PM ******/
 SET ANSI_NULLS ON

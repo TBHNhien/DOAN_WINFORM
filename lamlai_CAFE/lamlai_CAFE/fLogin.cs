@@ -52,7 +52,7 @@ namespace lamlai_CAFE
 
             if (Login(userName, passWord))
             {
-                fTableManager f = new fTableManager();
+                FQLy f = new FQLy();
                 this.Hide();//ẩn flogin hiện tại , sau khi đăng nhập thành công
                 f.ShowDialog();//thằng nào dialog là top mode
                 this.Show();//hiện lại flogin , sau khi thoát ftablemanager

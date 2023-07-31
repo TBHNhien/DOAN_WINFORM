@@ -213,3 +213,4 @@ C:\Users\Admin\Desktop\doanC#\DOAN_WINFORM\lamlai_CAFE\lamlai_CAFE\bin\Debug\ru\
 C:\Users\Admin\Desktop\doanC#\DOAN_WINFORM\lamlai_CAFE\lamlai_CAFE\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Admin\Desktop\doanC#\DOAN_WINFORM\lamlai_CAFE\lamlai_CAFE\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Admin\Desktop\doanC#\DOAN_WINFORM\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.csproj.CopyComplete
+C:\Users\Admin\Desktop\doanC#\DOAN_WINFORM\lamlai_CAFE\lamlai_CAFE\obj\Debug\lamlai_CAFE.FQLy.resources

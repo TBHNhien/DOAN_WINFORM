@@ -90,11 +90,17 @@
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\BillDAO.cs" />
     <Compile Include="DAO\BillInfoDAO.cs" />
+    <Compile Include="DAO\CategoryDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DataProvLL.cs" />
+    <Compile Include="DAO\FoodDAO.cs" />
+    <Compile Include="DAO\MenuDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\BillInfo.cs" />
+    <Compile Include="DTO\Category.cs" />
+    <Compile Include="DTO\Food.cs" />
+    <Compile Include="DTO\Menu.cs" />
     <Compile Include="DTO\Table.cs" />
     <Compile Include="fAccountProfile.cs">
       <SubType>Form</SubType>
@@ -131,6 +137,12 @@
     </Compile>
     <Compile Include="fLuong.Designer.cs">
       <DependentUpon>fLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQLy.Designer.cs">
+      <DependentUpon>FQLy.cs</DependentUpon>
     </Compile>
     <Compile Include="fReportStore.cs">
       <SubType>Form</SubType>
@@ -195,7 +207,6 @@
       <DependentUpon>BaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="baoCaoLoiNhuan.rdlc" />
-    <EmbeddedResource Include="BaoCaoLuong.rdlc" />
     <EmbeddedResource Include="fAccountProfile.resx">
       <DependentUpon>fAccountProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fLuong.resx">
       <DependentUpon>fLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQLy.resx">
+      <DependentUpon>FQLy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReportStore.resx">
       <DependentUpon>fReportStore.cs</DependentUpon>

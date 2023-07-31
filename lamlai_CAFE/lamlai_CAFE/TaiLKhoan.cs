@@ -62,9 +62,9 @@ namespace BaiLon
         {
             try
             {
-                TaiKhoan Tim = context.TaiKhoans.FirstOrDefault(p => p.MaChucVu.ToString() == txtMaSo.Text.ToString());
+                TaiKhoan Them = context.TaiKhoans.FirstOrDefault(p => p.MaTaiKhoan.ToString() == txtMaSo.Text.ToString());
                 if (txtMaSo.Text != ""&&txtMatKhau.Text !="" && txtTen.Text != "") {
-                    if (Tim == null)
+                    if (Them == null)
                     {
                         TaiKhoan s = new TaiKhoan()
                         {
@@ -132,7 +132,9 @@ namespace BaiLon
         {
             try
             {
-                TaiKhoan Sua = context.TaiKhoans.FirstOrDefault(p => p.MaChucVu.ToString() == txtMaSo.Text.ToString());
+                
+                TaiKhoan Sua = context.TaiKhoans.FirstOrDefault(p => p.MaTaiKhoan.ToString() == txtMaSo.Text.ToString());
+
                 if (Sua != null)
                 {
                     Sua.MaTaiKhoan = txtMaSo.Text.ToString();
@@ -175,6 +177,11 @@ namespace BaiLon
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void cbxChucVu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
