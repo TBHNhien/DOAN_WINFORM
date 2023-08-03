@@ -44,6 +44,8 @@
             this.lsvBill = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbTongGia = new System.Windows.Forms.TextBox();
             this.cbSwitchTable = new System.Windows.Forms.ComboBox();
@@ -70,14 +72,14 @@
             this.xemLươngToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(933, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(933, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -87,7 +89,7 @@
             this.thôngTinCáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.thoongTinTaiToolStripMenuItem.Name = "thoongTinTaiToolStripMenuItem";
-            this.thoongTinTaiToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.thoongTinTaiToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
             this.thoongTinTaiToolStripMenuItem.Text = "Thông tin tài khoản";
             this.thoongTinTaiToolStripMenuItem.Click += new System.EventHandler(this.thoongTinTaiToolStripMenuItem_Click);
             // 
@@ -108,21 +110,21 @@
             // báoCáoToolStripMenuItem
             // 
             this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
-            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(77, 24);
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(77, 26);
             this.báoCáoToolStripMenuItem.Text = "Báo cáo";
             this.báoCáoToolStripMenuItem.Click += new System.EventHandler(this.báoCáoToolStripMenuItem_Click);
             // 
             // khoToolStripMenuItem
             // 
             this.khoToolStripMenuItem.Name = "khoToolStripMenuItem";
-            this.khoToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.khoToolStripMenuItem.Size = new System.Drawing.Size(49, 26);
             this.khoToolStripMenuItem.Text = "Kho";
             this.khoToolStripMenuItem.Click += new System.EventHandler(this.khoToolStripMenuItem_Click);
             // 
             // xemLươngToolStripMenuItem
             // 
             this.xemLươngToolStripMenuItem.Name = "xemLươngToolStripMenuItem";
-            this.xemLươngToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.xemLươngToolStripMenuItem.Size = new System.Drawing.Size(99, 26);
             this.xemLươngToolStripMenuItem.Text = "Xem Lương";
             this.xemLươngToolStripMenuItem.Click += new System.EventHandler(this.xemLươngToolStripMenuItem_Click);
             // 
@@ -191,7 +193,9 @@
             // 
             this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
-            this.columnHeader2});
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
             this.lsvBill.GridLines = true;
             this.lsvBill.HideSelection = false;
             this.lsvBill.Location = new System.Drawing.Point(3, 95);
@@ -203,11 +207,23 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "ID Food";
+            this.columnHeader1.Text = "Tên món";
+            this.columnHeader1.Width = 80;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Count";
+            this.columnHeader2.Text = "Số lượng";
+            this.columnHeader2.Width = 80;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 80;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 100;
             // 
             // panel3
             // 
@@ -271,6 +287,7 @@
             this.btnCheckOut.TabIndex = 5;
             this.btnCheckOut.Text = "Thanh toán";
             this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // flpTable
             // 
@@ -328,5 +345,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ToolStripMenuItem xemLươngToolStripMenuItem;
         private System.Windows.Forms.TextBox txbTongGia;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

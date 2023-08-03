@@ -12,6 +12,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -32,7 +33,11 @@ namespace lamlai_CAFE
             List<FOODCATEGORY> fC = context.FOODCATEGORies.ToList();
             List<FOOD> fD = context.FOODs.ToList();
 
-            FillFoodComboBox(fC, fD);
+            FillFoodComboBox(fC);
+
+            // Lấy giá trị SelectedValue từ ComboBox và chuyển đổi thành số nguyên
+            int selectedCategoryId = int.Parse(cbCategory.SelectedValue.ToString());
+            LoadFoodListByCategoryID(selectedCategoryId);
         }
 
 
@@ -101,27 +106,24 @@ namespace lamlai_CAFE
         }
 
 
-        private void FillFoodComboBox(List<FOODCATEGORY> listFOODCATEGORY, List<FOOD> listFOOD)
+        private void FillFoodComboBox(List<FOODCATEGORY> listFOODCATEGORY)//, List<FOOD> listFOOD
         {
             this.cbCategory.DataSource = listFOODCATEGORY;
             this.cbCategory.DisplayMember = "NAMECATEGORYFOOD";
             this.cbCategory.ValueMember = "IDFOODCATEGORY";
 
-            this.cbFood.DataSource = listFOOD;
-            this.cbFood.DisplayMember = "NAMEFOOD";
-            this.cbFood.ValueMember = "IDFOOD";
+            //this.cbFood.DataSource = listFOOD;
+            //this.cbFood.DisplayMember = "NAMEFOOD";
+            //this.cbFood.ValueMember = "IDFOOD";
         }
 
- 
 
-        //void LoadCategory()
-        //{
-        //    List<DTO.Category> listCategory = CategoryDAO.Instance.GetListCategory();
-        //    cbCategory.DataSource = listCategory;
+        
 
-        //    //cần chỉ cho nó biết trường nào để lấy tên
-        //    cbCategory.DisplayMember = "Name";
-        //}
+
+
+
+
 
         void LoadFoodListByCategoryID(int id)
         {
@@ -226,7 +228,9 @@ namespace lamlai_CAFE
             LoadTable();
         }
 
-        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+
+        public static FOODCATEGORY selected;
+        public void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
             int id = 0;
 
@@ -239,11 +243,36 @@ namespace lamlai_CAFE
                 return;
 
             //TH đã có datasource
-            FOODCATEGORY selected = cb.SelectedItem as FOODCATEGORY;
+           selected = new FOODCATEGORY();
+
+
+            selected = cb.SelectedItem as FOODCATEGORY;
 
             id = selected.IDFOODCATEGORY;
 
             LoadFoodListByCategoryID(id);
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            //xác định bill hiện tại là thằng nào
+            Table table = lsvBill.Tag as Table;//lấy được table
+
+            //lấy idbill
+            int idbill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            int discount = (int)nmDiscount.Value;
+            float totalPrice = (float)Convert.ToDouble(txbTongGia.Text.Split(' ')[0]);
+            float finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
+
+            if (idbill != -1) //bill này có
+            {
+                if (MessageBox.Show(string.Format("Bạn muốn thanh toán bàn {0}\n Tổng tiền - (Tổng tiền / 100) x Giảm giá \n => {1} - ({1} /100 ) x {2} = {3}", table.Name, totalPrice, discount, finalTotalPrice), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                {
+                    BillDAO.Instance.CheckOut(idbill, discount);
+                    ShowBill(table.ID);
+                    LoadTable();
+                }
+            }
         }
     }
 }

@@ -55,8 +55,12 @@ namespace lamlai_CAFE.DAO
             {
                 return 1;
             }
+        }
 
-
+        public void CheckOut(int id, int discount) // thay đổi status bàn về 1 là đã thanh toán
+        {
+            string query = "update bill set status = 1 , Datecheckout = GETDATE() , " + "DISCOUNT = " + discount + " WHERE IDbill = " + id;
+            DataProvider.Instance.ExecuteNonQuery(query);//Update ->nonquery
         }
     }
 }

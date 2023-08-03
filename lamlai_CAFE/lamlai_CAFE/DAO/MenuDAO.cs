@@ -27,7 +27,7 @@ namespace lamlai_CAFE.DAO
         public List<DTO.Menu> GetListMenuByTable(int id)
         {
             List<DTO.Menu> listMenu = new List<DTO.Menu>();
-            string query = "SELECT F.NAMEFOOD , BI.COUNTFOOD , F.PRICE,F.PRICE * BI.COUNTFOOD AS [TOTALPRICE] FROM BILLINFO BI ,BILL B, FOOD F WHERE BI.IDBILL = B.IDBILL AND BI.IDFOOD = F.IDFOOD AND B.idTableFood = " + id + "and B.STATUS = 0";
+            string query = "SELECT F.NAMEFOOD , SUM(BI.COUNTFOOD) AS [TONGMON] , F.PRICE,F.PRICE * SUM(BI.COUNTFOOD) AS [TOTALPRICE] FROM BILLINFO BI ,BILL B, FOOD F WHERE BI.IDBILL = B.IDBILL AND BI.IDFOOD = F.IDFOOD AND B.idTableFood ="+id+" and B.STATUS = 0 group by F.NAMEFOOD , BI.COUNTFOOD ,  F.PRICE";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)
             {

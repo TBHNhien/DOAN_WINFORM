@@ -21,7 +21,7 @@ namespace lamlai_CAFE.DTO
         public Menu(DataRow row)
         {
             this.foodName = row["NAMEFOOD"].ToString();
-            this.count = (int)row["COUNTFOOD"];
+            this.count = (int)row["TONGMON"];
             this.price = (float)Convert.ToDouble(row["PRICE"].ToString());//chuyển qua string xong qua double xong qua float
             this.totalPrice = (float)Convert.ToDouble(row["TOTALPRICE"].ToString());
         }
