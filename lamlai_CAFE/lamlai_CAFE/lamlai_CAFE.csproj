@@ -176,7 +176,6 @@
     <Compile Include="Model\classLoiNhuan.cs" />
     <Compile Include="Model\FOOD.cs" />
     <Compile Include="Model\FOODCATEGORY.cs" />
-    <Compile Include="Model\Model1.cs" />
     <Compile Include="Model\Model2.cs" />
     <Compile Include="Model\salary.cs" />
     <Compile Include="Model\STORE.cs" />

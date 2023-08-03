@@ -174,7 +174,7 @@ namespace lamlai_CAFE
 
         private void btnQLBan_Click(object sender, EventArgs e)
         {
-            using (var dbContext = new Model1())
+            using (var dbContext = new Model2())
             {
                 using (var command = dbContext.Database.Connection.CreateCommand())
                 {

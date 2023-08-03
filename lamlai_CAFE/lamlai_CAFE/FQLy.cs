@@ -17,6 +17,8 @@ namespace lamlai_CAFE
 {
     public partial class FQLy : Form
     {
+
+        
         public FQLy()
         {
             InitializeComponent();
@@ -30,8 +32,14 @@ namespace lamlai_CAFE
 
         private void btnacc_Click(object sender, EventArgs e)
         {
+            //Properties.Settings.Default.Type;
+
+
+
             TaiLKhoan f = new TaiLKhoan();
             f.Show();
+
+
         }
 
         private void btnqliNV_Click(object sender, EventArgs e)

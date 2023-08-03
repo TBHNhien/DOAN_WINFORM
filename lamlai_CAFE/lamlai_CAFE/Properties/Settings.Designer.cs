@@ -36,7 +36,7 @@ namespace lamlai_CAFE.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("A1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string username {
             get {
                 return ((string)(this["username"]));
@@ -48,13 +48,25 @@ namespace lamlai_CAFE.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string password {
             get {
                 return ((string)(this["password"]));
             }
             set {
                 this["password"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Type {
+            get {
+                return ((string)(this["Type"]));
+            }
+            set {
+                this["Type"] = value;
             }
         }
     }

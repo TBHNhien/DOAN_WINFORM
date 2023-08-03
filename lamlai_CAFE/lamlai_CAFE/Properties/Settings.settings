@@ -11,10 +11,13 @@
       <Value Profile="(Default)">Data Source=DESKTOP-4SNQUT1\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=True</Value>
     </Setting>
     <Setting Name="username" Type="System.String" Scope="User">
-      <Value Profile="(Default)">A1</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1</Value>
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Type" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>
