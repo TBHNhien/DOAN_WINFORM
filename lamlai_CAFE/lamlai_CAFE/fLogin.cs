@@ -87,5 +87,11 @@ namespace lamlai_CAFE
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FQUENMATKHAU f = new FQUENMATKHAU();
+            f.Show();
+        }
     }
 }

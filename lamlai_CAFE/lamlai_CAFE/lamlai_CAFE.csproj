@@ -144,6 +144,12 @@
     <Compile Include="FQLy.Designer.cs">
       <DependentUpon>FQLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="FQUENMATKHAU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQUENMATKHAU.Designer.cs">
+      <DependentUpon>FQUENMATKHAU.cs</DependentUpon>
+    </Compile>
     <Compile Include="fReportStore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FQLy.resx">
       <DependentUpon>FQLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQUENMATKHAU.resx">
+      <DependentUpon>FQUENMATKHAU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReportStore.resx">
       <DependentUpon>fReportStore.cs</DependentUpon>

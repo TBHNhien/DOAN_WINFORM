@@ -39,6 +39,11 @@ namespace lamlai_CAFE.DAO
             return tableList;
         }
 
+        public void SwitchTable(int id1, int id2)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("USP_SWITCHTABLE @idtabl1 , @idtable2", new object[] { id1, id2 });
+        }
+
 
     }
 }

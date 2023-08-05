@@ -38,6 +38,8 @@ namespace lamlai_CAFE
             // Lấy giá trị SelectedValue từ ComboBox và chuyển đổi thành số nguyên
             int selectedCategoryId = int.Parse(cbCategory.SelectedValue.ToString());
             LoadFoodListByCategoryID(selectedCategoryId);
+
+            LoadComboboxTable(cbSwitchTable);
         }
 
 
@@ -118,12 +120,6 @@ namespace lamlai_CAFE
         }
 
 
-        
-
-
-
-
-
 
         void LoadFoodListByCategoryID(int id)
         {
@@ -135,6 +131,13 @@ namespace lamlai_CAFE
 
             //cần chỉ cho nó biết trường nào để lấy tên
             cbFood.DisplayMember = "NAMEFOOD";
+        }
+
+
+        void LoadComboboxTable(ComboBox cb)
+        {
+            cb.DataSource = TableDAO.Instance.LoadTableList();
+            cb.DisplayMember = "Name";
         }
 
         #endregion
@@ -272,6 +275,34 @@ namespace lamlai_CAFE
                     ShowBill(table.ID);
                     LoadTable();
                 }
+            }
+        }
+
+        private void btnSwitchTable_Click(object sender, EventArgs e)
+        {
+
+                int? id1 = (lsvBill.Tag as Table)?.ID;
+                int id2 = (cbSwitchTable.SelectedItem as Table).ID;
+
+            if (id1 == null)
+            {
+                MessageBox.Show("chưa chọn bàn để chuyển !!! ");
+                
+            }
+            else
+            {
+                    
+                if ((int)id1 == id2) 
+                {
+                    MessageBox.Show("Bàn chuyển phải khác bàn được chuyển !!! ");
+                    return;
+                }
+
+                if (MessageBox.Show(String.Format("Bạn có muốn chuyển bàn {0} qua bàn {1}", (lsvBill.Tag as Table).Name, (cbSwitchTable.SelectedItem as Table).Name), "Thong bao", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK) ;
+
+                TableDAO.Instance.SwitchTable((int)id1, id2);
+
+                LoadTable();
             }
         }
     }
