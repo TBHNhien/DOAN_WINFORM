@@ -68,7 +68,7 @@ namespace lamlai_CAFE
                             lSR.Add(temp);
                         }
 
-                        this.reportViewer1.LocalReport.ReportPath = "C:\\Users\\Admin\\Desktop\\DOAN\\lamlai_CAFE\\lamlai_CAFE\\StoreReport.rdlc";
+                        this.reportViewer1.LocalReport.ReportPath = "C:\\Users\\Admin\\Desktop\\doanC#\\DOAN_WINFORM\\lamlai_CAFE\\lamlai_CAFE\\StoreReport.rdlc";
                         var RDataSource = new ReportDataSource("StoreDataSet", lSR);
                         this.reportViewer1.LocalReport.DataSources.Clear();
                         this.reportViewer1.LocalReport.DataSources.Add(RDataSource);

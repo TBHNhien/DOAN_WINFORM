@@ -23,9 +23,6 @@ namespace lamlai_CAFE.DAO
         //TẠO hàng dựng
         private DataProvider() { }
 
-
-
-
         private string connectionSTR = " Data Source=.\\SQLEXPRESS;Initial Catalog=QLBH;Integrated Security=True ";
 
         public DataTable ExecuteQuery (string query , object[]  parameter = null)

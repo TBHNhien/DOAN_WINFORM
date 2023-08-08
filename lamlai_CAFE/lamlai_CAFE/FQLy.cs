@@ -3,6 +3,7 @@ using Bangnhanvien;
 using Chamcong_nhan_vien_;
 using lamlai_CAFE.Model;
 using Luong_admin_;
+using Luong_nhan_vien_;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,7 +76,7 @@ namespace lamlai_CAFE
 
         private void btnloinhuan_Click(object sender, EventArgs e)
         {
-            BaoCao f = new BaoCao();
+            fViewLuongNV f = new fViewLuongNV();
             f.Show();
         }
 

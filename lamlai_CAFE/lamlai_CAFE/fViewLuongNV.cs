@@ -46,7 +46,7 @@ namespace Luong_nhan_vien_
            
 
 
-            string connectionString = @"Data Source=BRUHHH\SQLEXPRESS;Initial Catalog=luongnhanvien;Integrated Security=True";
+            string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=luongnhanvien;Integrated Security=True";
 
             try
             {

@@ -65,13 +65,13 @@
             // 
             this.buttimkiem.Location = new System.Drawing.Point(706, 28);
             this.buttimkiem.Name = "buttimkiem";
-            this.buttimkiem.Size = new System.Drawing.Size(79, 22);
+            this.buttimkiem.Size = new System.Drawing.Size(88, 39);
             this.buttimkiem.TabIndex = 4;
             this.buttimkiem.Text = "Tìm kiếm";
             this.buttimkiem.UseVisualStyleBackColor = true;
             this.buttimkiem.Click += new System.EventHandler(this.buttimkiem_Click);
             // 
-            // Form1
+            // fViewLuongNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,7 +80,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.texttimkiem);
             this.Controls.Add(this.bangluong);
-            this.Name = "Form1";
+            this.Name = "fViewLuongNV";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bangluong)).EndInit();

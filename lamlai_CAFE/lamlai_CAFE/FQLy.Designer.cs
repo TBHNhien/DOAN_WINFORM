@@ -31,7 +31,7 @@
             this.btnacc = new System.Windows.Forms.Button();
             this.btnqliNV = new System.Windows.Forms.Button();
             this.btnluong = new System.Windows.Forms.Button();
-            this.btnloinhuan = new System.Windows.Forms.Button();
+            this.btnViewLuong = new System.Windows.Forms.Button();
             this.btnKho = new System.Windows.Forms.Button();
             this.btnCaLam = new System.Windows.Forms.Button();
             this.btnThongke = new System.Windows.Forms.Button();
@@ -69,15 +69,15 @@
             this.btnluong.UseVisualStyleBackColor = true;
             this.btnluong.Click += new System.EventHandler(this.btnluong_Click);
             // 
-            // btnloinhuan
+            // btnViewLuong
             // 
-            this.btnloinhuan.Location = new System.Drawing.Point(238, 339);
-            this.btnloinhuan.Name = "btnloinhuan";
-            this.btnloinhuan.Size = new System.Drawing.Size(112, 67);
-            this.btnloinhuan.TabIndex = 3;
-            this.btnloinhuan.Text = "Tổng kết lợi nhuận";
-            this.btnloinhuan.UseVisualStyleBackColor = true;
-            this.btnloinhuan.Click += new System.EventHandler(this.btnloinhuan_Click);
+            this.btnViewLuong.Location = new System.Drawing.Point(238, 339);
+            this.btnViewLuong.Name = "btnViewLuong";
+            this.btnViewLuong.Size = new System.Drawing.Size(112, 67);
+            this.btnViewLuong.TabIndex = 3;
+            this.btnViewLuong.Text = "Xem Lương Nhân Viên";
+            this.btnViewLuong.UseVisualStyleBackColor = true;
+            this.btnViewLuong.Click += new System.EventHandler(this.btnloinhuan_Click);
             // 
             // btnKho
             // 
@@ -140,7 +140,7 @@
             this.Controls.Add(this.btnThongke);
             this.Controls.Add(this.btnCaLam);
             this.Controls.Add(this.btnKho);
-            this.Controls.Add(this.btnloinhuan);
+            this.Controls.Add(this.btnViewLuong);
             this.Controls.Add(this.btnluong);
             this.Controls.Add(this.btnqliNV);
             this.Controls.Add(this.btnacc);
@@ -155,7 +155,7 @@
         private System.Windows.Forms.Button btnacc;
         private System.Windows.Forms.Button btnqliNV;
         private System.Windows.Forms.Button btnluong;
-        private System.Windows.Forms.Button btnloinhuan;
+        private System.Windows.Forms.Button btnViewLuong;
         private System.Windows.Forms.Button btnKho;
         private System.Windows.Forms.Button btnCaLam;
         private System.Windows.Forms.Button btnThongke;
